@@ -294,12 +294,16 @@ body {
 
 .our-team .list {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
 
 }
 
 .our-team .item {
-    width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
+    margin-bottom: 30px;
 
     text-align: center;
     background-color: var(--primary-bg-color);
@@ -308,9 +312,6 @@ body {
     box-shadow: 0 2px 1px rgba(0, 0, 0, .2), 0 1px 1px rgba(0, 0, 0, .14), 0 1px 3px rgba(0, 0, 0, .12), 0 4px 4px rgba(0, 0, 0, .25);
 }
 
-.our-team .item:last-child {
-    margin-right: 0;
-}
 
 .our-team .photo {
     display: block;
